@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pages/intro_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +11,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter Demo',
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: IntroPage(),
+    ); // MaterialApp
   }
 }
