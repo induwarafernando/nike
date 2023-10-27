@@ -6,7 +6,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 181, 192, 203),
+      backgroundColor: Color.fromARGB(255, 233, 233, 255),
       body: Center(
         child: Column(
           children: [
@@ -19,7 +19,20 @@ class IntroPage extends StatelessWidget {
                 height: 200,
               ),
             ),
-            //text
+            const SizedBox(height: 48),
+            //title
+
+            const Text(
+              'Just Do It',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            )
+
+            //subtitle
+
+            //start now button
           ],
         ),
       ),
