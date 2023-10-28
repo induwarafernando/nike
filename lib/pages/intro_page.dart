@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike/pages/home_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({Key? key}) : super(key: key);
@@ -51,7 +52,7 @@ class IntroPage extends StatelessWidget {
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Homepage(),
+                    builder: (context) => HomePage(),
                   ),
                 ),
                 child: Container(
