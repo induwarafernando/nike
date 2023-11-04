@@ -8,14 +8,17 @@ class MyBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: GNav(
+        color: Colors.grey[400],
+        activeColor: Colors.black,
+        tabActiveBorder: Border.all(color: Colors.white, width: 1),
         tabs: [
           GButton(
             icon: Icons.home,
             text: 'Shop',
           ),
           GButton(
-            icon: Icons.search,
-            text: 'search',
+            icon: Icons.shopping_bag_rounded,
+            text: 'Cart',
           ),
         ],
       ),
