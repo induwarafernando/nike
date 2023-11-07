@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../components/bottom_nav_bar.dart';
+import 'cart_page.dart';
+import 'shop_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -22,10 +24,10 @@ class _HomePageState extends State<HomePage> {
   }
 
 //pages to be displayed when the user taps on the bottom nav bar
-  final List<Widget> _pages = [
-    const ShopPage('Shop'),
-    const CartPage('Cart'),
-  ];
+  List<Widget> get _pages => [
+        const ShopPage(),
+        const CartPage(),
+      ];
 
   @override
   Widget build(BuildContext context) {
