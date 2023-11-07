@@ -35,6 +35,16 @@ class _ShopPageState extends State<ShopPage> {
           ),
         ),
         //message
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 25.0),
+          child: Text(
+            'everyone flies.. some fly longer than others',
+            style: TextStyle(
+              color: Colors.grey[600],
+              fontSize: 20,
+            ),
+          ),
+        ),
 
         //hot picks
       ],
