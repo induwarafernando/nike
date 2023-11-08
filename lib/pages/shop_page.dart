@@ -56,7 +56,9 @@ class _ShopPageState extends State<ShopPage> {
               Text(
                 'Hot Picks',
                 style: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.black54),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    color: Colors.black),
               ),
               Text(
                 'See all',
