@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike/models/shoe.dart';
 
 import '../components/shoe_tile.dart';
 
@@ -74,7 +75,15 @@ class _ShopPageState extends State<ShopPage> {
         const SizedBox(height: 10),
 
         Expanded(child: ListView.builder(itemBuilder: (context, index) {
-          return ShoeTile();
+          Shoe shoe = Shoe(
+              name: 'Nike Air Max 270',
+              price: '160',
+              description:
+                  'The Nike Air Max 270 delivers visible air and unbelievable comfort under every step.',
+              imagePath: 'lib/images/pexels-aman-jakhar-1124466.jpg');
+          return ShoeTile(
+            shoe: shoe,
+          );
         }))
       ],
     );
