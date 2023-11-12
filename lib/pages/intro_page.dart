@@ -25,7 +25,6 @@ class IntroPage extends StatelessWidget {
               ),
               const SizedBox(height: 28),
               //title
-
               const Text(
                 'Just Do It',
                 style: TextStyle(
@@ -33,9 +32,7 @@ class IntroPage extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-
               //subtitle
-
               const Text(
                 'Brand new sneakers and custom kicks',
                 style: TextStyle(
@@ -44,18 +41,15 @@ class IntroPage extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-
               const SizedBox(height: 48),
-
               //start now button
-
               GestureDetector(
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => HomePage(),
-                  ),
-                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
+                },
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[900],
