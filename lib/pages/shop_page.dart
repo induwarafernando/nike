@@ -77,17 +77,26 @@ class _ShopPageState extends State<ShopPage> {
         Expanded(
             child: ListView.builder(
                 itemCount: 4,
+                scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   Shoe shoe = Shoe(
                       name: 'Nike Air Max 270',
                       price: '160',
                       description:
                           'The Nike Air Max 270 delivers visible air and unbelievable comfort under every step.',
-                      imagePath: 'lib/images/pexels-aman-jakhar-1124466.jpg');
+                      imagePath:
+                          'lib/imagesnike/pexels-aman-jakhar-1124466.jpg');
                   return ShoeTile(
                     shoe: shoe,
                   );
-                }))
+                })),
+
+        const Padding(
+          padding: const EdgeInsets.only(top: 25.0, left: 25.0, right: 25.0),
+          child: Divider(
+            color: Colors.white,
+          ),
+        )
       ],
     );
   }
