@@ -83,7 +83,7 @@ class _ShopPageState extends State<ShopPage> {
                       name: 'Nike Air Max 270',
                       price: '160',
                       description:
-                          'The Nike Air Max 270 delivers visible air and unbelievable comfort under every step.',
+                          'visible air and unbelievable comfort under every step.',
                       imagePath:
                           'lib/imagesnike/pexels-aman-jakhar-1124466.jpg');
                   return ShoeTile(
