@@ -29,4 +29,27 @@ class Cart {
       imagePath: 'lib/imagesnike/pexels-aman-jakhar-1124466',
     ),
   ];
+
+  //list of itemsin user cart
+  List<Shoe> userCart = [];
+
+  //get the list of shoes for sale
+  List<Shoe> getShoeList() {
+    return shoeShop;
+  }
+
+  //get cart
+  List<Shoe> getUserCart() {
+    return userCart;
+  }
+
+  //add items to cart
+  void addItemToCart(Shoe shoe) {
+    userCart.add(shoe);
+  }
+
+  //remove items from cart
+  void removeItemFromCart(Shoe shoe) {
+    userCart.remove(shoe);
+  }
 }

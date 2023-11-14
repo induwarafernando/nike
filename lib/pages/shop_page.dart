@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nike/models/shoe.dart';
-
 import '../components/shoe_tile.dart';
 
 class ShopPage extends StatefulWidget {
