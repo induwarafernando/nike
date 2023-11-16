@@ -1,6 +1,7 @@
 import 'shoe.dart';
+import 'package:provider/provider.dart';
 
-class Cart {
+class Cart extends ChangeNotifier {
   List<Shoe> shoeShop = [
     Shoe(
       name: "Nike Air Max 90",
@@ -46,6 +47,7 @@ class Cart {
   //add items to cart
   void addItemToCart(Shoe shoe) {
     userCart.add(shoe);
+    notifyListeners();
   }
 
   //remove items from cart
