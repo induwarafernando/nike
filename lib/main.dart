@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import "package:provider/provider.dart";
 import 'pages/intro_page.dart';
 import 'models/cart.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
