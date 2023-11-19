@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike/components/cart_item.dart';
 import 'package:nike/models/shoe.dart';
 import 'package:provider/provider.dart';
 import '../models/cart.dart';
@@ -15,7 +16,7 @@ class _ShopPageState extends State<CartPage> {
   Widget build(BuildContext context) {
     return Consumer<Cart>(
       builder: (context, value, child) => Padding(
-        padding: const EdgeInsets.symmetric(25.0),
+        padding: const EdgeInsets.symmetric(horizontal: 25.0),
         child: Column(
           children: [
             //heading
@@ -34,7 +35,9 @@ class _ShopPageState extends State<CartPage> {
               Shoe individualShoe = value.getUserCart()[index];
 
               //return the cart item
-              return CartItem();
+              return CartItem(
+                shoe: individualShoe,
+              );
             }))
           ],
         ),
