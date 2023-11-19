@@ -30,15 +30,18 @@ class _ShopPageState extends State<CartPage> {
 
             const SizedBox(height: 10),
 
-            Expanded(child: ListView.builder(itemBuilder: (context, index) {
-              //get individual shoe
-              Shoe individualShoe = value.getUserCart()[index];
+            Expanded(
+                child: ListView.builder(
+                    itemCount: value.getUserCart().length,
+                    itemBuilder: (context, index) {
+                      //get individual shoe
+                      Shoe individualShoe = value.getUserCart()[index];
 
-              //return the cart item
-              return CartItem(
-                shoe: individualShoe,
-              );
-            }))
+                      //return the cart item
+                      return CartItem(
+                        shoe: individualShoe,
+                      );
+                    }))
           ],
         ),
       ),
