@@ -9,26 +9,26 @@ class Cart extends ChangeNotifier {
       price: "150",
       description:
           'The Nike Air Max 90 stays true to its OG running roots with the iconic Waffle sole, stitched overlays and classic TPU accents. Fresh colours give a modern look while Max Air cushioning adds comfort to your journey.',
-      imagePath: 'lib/imagesnike/pexels-piedra-1464624',
+      imagePath: '',
     ),
     Shoe(
       name: "Nike Air",
       price: "190",
       description:
           "Stays true to its OG running roots with the iconic Waffle sole, stitched overlays and classic TPU accents. Fresh colours give a modern look while Max Air cushioning adds comfort to your journey.",
-      imagePath: 'lib/imagesnike/pexels-piedra-1456706',
+      imagePath: 'lib\imagesnike\pexels-aman-jakhar-1124466.jpg',
     ),
     Shoe(
       name: "Nike Air Max",
       price: "200",
       description: "Lightest Ever",
-      imagePath: 'lib/imagesnike/pexels-aman-jakhar-1124466',
+      imagePath: '',
     ),
     Shoe(
       name: "Air Jordan",
       price: "220",
       description: "Forward-Thinking Utility",
-      imagePath: 'lib/imagesnike/pexels-aman-jakhar-1124466',
+      imagePath: '',
     ),
   ];
 
