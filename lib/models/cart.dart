@@ -7,28 +7,26 @@ class Cart extends ChangeNotifier {
     Shoe(
       name: "Nike Air Max 90",
       price: "150",
-      description:
-          'The Nike Air Max 90 stays true to its OG running roots with the iconic Waffle sole, stitched overlays and classic TPU accents. Fresh colours give a modern look while Max Air cushioning adds comfort to your journey.',
+      description: 'Adds comfort to your journey.',
       imagePath: 'lib/imagesnike/pexels-aman-jakhar-1124466.jpg',
     ),
     Shoe(
       name: "Nike Air",
       price: "190",
-      description:
-          "Stays true to its OG running roots with the iconic Waffle sole, stitched overlays and classic TPU accents. Fresh colours give a modern look while Max Air cushioning adds comfort to your journey.",
-      imagePath: 'imagesnike/pexels-aman-jakhar-1124466.jpg',
+      description: "Stay fresh",
+      imagePath: 'lib/imagesnike/pexels-ray-piedra-1456706.jpg',
     ),
     Shoe(
       name: "Nike Air Max",
       price: "200",
       description: "Lightest Ever",
-      imagePath: 'imagesnike/pexels-aman-jakhar-1124466.jpg',
+      imagePath: 'lib/imagesnike/pexels-ray-piedra-1464624.jpg',
     ),
     Shoe(
       name: "Air Jordan",
       price: "220",
       description: "Forward-Thinking Utility",
-      imagePath: 'imagesnike/pexels-aman-jakhar-1124466.jpg',
+      imagePath: 'lib/imagesnike/pexels-aman-jakhar-1124466.jpg',
     ),
   ];
 
